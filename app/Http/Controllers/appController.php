@@ -24,7 +24,7 @@ class appController extends Controller
                 dd($data);
     }
 
-    public function con
+
 
     public function devis(){
         return view('emails/devis');
