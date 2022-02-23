@@ -7,6 +7,17 @@ use Illuminate\Http\Request;
 class appController extends Controller
 {
     //
+    public function validator(){
+        return $request->validate([
+            'subject'=>'required|bail|integer',
+            'name'=>'required|bail|min:2',
+            'firstname'=>'required|bail|min:2',
+            'email'=>'required',
+            'phone'=>'required',
+            'entreprise'=>'required',
+            'message'=>'message'
+        ]);
+    }
     public function index(){
         return view('index');
     }
@@ -54,5 +65,5 @@ class appController extends Controller
     public function video(){
         return view('graphique.video');
     }
-    
+
 }

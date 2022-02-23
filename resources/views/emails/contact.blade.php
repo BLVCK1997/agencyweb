@@ -1,7 +1,7 @@
 @extends('layouts.optional')
 @section('content')
 
-    
+
     <div class="container-fluid pt-5 text-center">
         <h1 class="mt-5">
             Hello!
@@ -37,7 +37,7 @@
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                 </div>
 
                 <div class="mb-3">
@@ -61,9 +61,9 @@
                 </p>
 
                 <div class="d-flex justify-content-center">
-                <button class="btn btn-primary px-5 py-3"> Envoyer</button> 
+                <button class="btn btn-primary px-5 py-3"> Envoyer</button>
                 </div>
-                
+
             </form>
         </div>
     </div>
