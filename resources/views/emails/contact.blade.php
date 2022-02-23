@@ -16,7 +16,7 @@
                 @csrf
                 <div class="mb-3">
                     <label for="subject" class="form-label">Sujet du Message</label>
-                    <select name="subject" id="subject" class="form-select" required>
+                    <select name="subject" id="subject" class="form-select" >
                         <option selected>Votre choix</option>
                         <option value="1">Demande de devis</option>
                         <option value="2"> Une question?</option>
@@ -30,14 +30,14 @@
                 <div class="row">
                 <div class="mb-3 col-md-4">
                     <label for="name" class="form-label">Nom</label>
-                    <input required type="text" class="form-control @error('name')is-invalid @enderror" id="name" name="name">
+                    <input  type="text" class="form-control @error('name')is-invalid @enderror" id="name" name="name">
                     @error('name')
                         <div class="alert">{{$errors->first('name');}}</div>
                     @enderror
                 </div>
                 <div class="mb-3 col-md-8">
                     <label for="firstname" class="form-label">Prénom(s)</label>
-                    <input required type="text" class="form-control @error('firstname') is-invalid @enderror}}" id="firstname" name="firstname">
+                    <input  type="text" class="form-control @error('firstname') is-invalid @enderror}}" id="firstname" name="firstname">
                     @error('firstname')
                         <div class="alert">{{$errors->first('firstname');}}</div>
                     @enderror
@@ -46,7 +46,7 @@
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
-                    <input required type="email" class="form-control @error('email') is-invalid @enderror}}" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                    <input  type="email" class="form-control @error('email') is-invalid @enderror}}" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                     @error('email')
                         <div class="alert">{{$errors->first('email');}}</div>
                     @enderror
@@ -54,7 +54,7 @@
 
                 <div class="mb-3">
                     <label for="phone" class="form-label">Téléphone</label>
-                    <input required type="text" class="form-control @error('phone') is-invalid @enderror}}" id="phone" name="phone">
+                    <input  type="text" class="form-control @error('phone') is-invalid @enderror}}" id="phone" name="phone">
                     @error('phone')
                         <div class="alert">{{$errors->first('phone');}}</div>
                     @enderror
@@ -63,7 +63,7 @@
                 <div class="mb-3">
                     <div class="mb-3">
                     <label for="category" class="form-label">Catégorie Client</label>
-                    <select name="category" id="category" class="form-select" required>
+                    <select name="category" id="category" class="form-select" >
                         <option selected>Dans quelle catégorie êtes vous?</option>
                         <option value="1">Particulier</option>
                         <option value="2"> Entreprise</option>
