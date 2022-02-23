@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-namespace App\Http\Requests;
+use App\Http\Requests\contactRequest;
 use Illuminate\Http\Request;
 
 class appController extends Controller
@@ -19,13 +19,12 @@ class appController extends Controller
         return view('realisations');
     }
 
-    public function contact(contactRequest $request){
-            if($request->isMethod('post')){
+    public function contact_send(contactRequest $request){
                 $data=$request->all();
                 dd($data);
-            }
-       return view('emails/contact');
     }
+
+    public function con
 
     public function devis(){
         return view('emails/devis');
