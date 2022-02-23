@@ -1,0 +1,232 @@
+a{
+    text-decoration: none;
+    color: darkslategray;
+}
+#img1{
+    background: url("../img/bg/bgone.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#img2{
+    background: url("../img/bg/bgtwo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#img3{
+    background: url("../img/bg/bgthree.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#first{
+    text-align: center;
+}
+.row p{
+    text-align:justify;
+    padding: 10px 15px;
+    margin:10px 0;
+    border-radius: 6px;
+}
+
+.print1{
+    background:royalblue;
+    position: relative;
+    /* background-position: center; */
+    background-size: cover;
+    width: 90%;
+    margin: 50px 0;
+}
+
+#realisation {
+    left: 50%;
+    top: 0;
+    background-color: darkslategrey;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition-duration: 1s;
+}
+#realisation:hover{
+    background-color: whitesmoke;
+    color: darkslategrey;
+}
+/* .img{
+    width: 100%;
+    display: inline-block;
+} */
+.colimg{
+    background: url('../img/logo/300.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+   
+    transition-duration: 1.2s;
+}
+.colimg:hover{
+    background-size: 125%;
+}
+.bgwhite{
+    background: #000;
+
+}
+.col-md-3 a{
+ text-decoration: none;
+ color: black;
+}
+
+.foot a{
+    text-decoration: none;
+    color:rgb(137, 148, 194);
+   }
+
+.slideps{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+@media (min-width:992px) and (max-width:1024px){
+    .responsive{padding:0!important;margin:0!important;}
+}
+@media (min-width:1025px) and (max-width:1258px){
+    .responsive{padding:0 .4px!important;margin:0 .4px!important;}
+}
+@media (min-width:351px) and (max-width:575px) {
+    .col-md-3{
+        text-decoration: none;
+        color: black;
+        align-self: center;
+        max-width: 50%;
+       }
+    .colimg{
+        background-size: 90%;
+        height: 150px;
+    }
+    .col-sm-6{
+        padding-left:12px!important;
+        text-align:center
+    }
+    
+}
+
+@media (min-width:351px) and (max-width:1399px) {
+    .colimg{
+        min-height: 150px;
+        max-height: 200px;
+    }
+}
+
+@media(max-width:991px){
+    .logo{width: 100px;}
+    .hidden{display:hidden;}
+    .more{
+        padding: 10px 20px;
+        color: gray;
+        /* background: rgb(255, 255, 255); */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        bottom:5%;
+        left:10%;
+        border-top-right-radius: 10px;
+    }
+}
+
+@media(min-width:992px){
+    .nav-link{
+        color: rgb(248, 248, 248);
+    }
+    .nav-link:hover{
+        color: white;
+    }
+    .nav-item:hover{
+        border-bottom: gray solid 2px;
+        animation-duration: 1.2s;
+    }
+    .logo{
+        width: 200px;
+    }
+    .devis{
+        border: gray solid 2px;
+        margin-left: 4.5rem;
+    }
+    .more{
+        padding: 20px 40px;
+        color: gray;
+        background: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        bottom:5%;
+        left:10%
+    }
+}
+
+.foot{
+    color: white;
+    background: #00002e;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    /* background: url('../img/bg/bggeome.jpg'); */
+}
+
+.border-radius-bottom-block{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.agencyweb{
+    display: block;
+    font-size: 18px;
+}
+
+.bggeome{
+    background: url('../img/bg/bggeome.jpg');
+}
+
+
+/*Propriétés de stratege uniquement*/
+.banniere{
+    height: 500px;
+    background-size: cover;
+    background-image: url('../img/bg/bggeome.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #000;
+    position: relative;
+}
+
+.banniere-text{
+    position: absolute;
+    top:70%;
+    left: 50%;
+    font-size: 20px;
+}
+
+.banniere-text2{
+    position: absolute;
+    top:80%;
+    left: 50%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.banniere-text,.banniere-text2{
+    font-family:Maax,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.stratege .row p{
+    font-size: large;
+}
+
+.stratege .img{
+    background-image: url('../img/bg/bgone.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    margin-bottom: 10px;
+}
