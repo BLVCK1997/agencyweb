@@ -12,17 +12,18 @@
     </div>
     <div class="container d-flex justify-content-center">
         <div class="col-md-8">
-            <form action="{{route('contact')}}" method="post">
+            <form action="{{route('contact-send')}}" method="post">
+                @method('post')
                 @csrf
                 <div class="mb-3">
                     <label for="subject" class="form-label">Sujet du Message</label>
-                    <select name="subject" id="subject" class="form-select" >
-                        <option selected>Votre choix</option>
+                    <select name="subject" id="subject" class="form-select @error('subject')is-invalid @enderror" >
+                        <option value=""selected>Votre choix</option>
                         <option value="1">Demande de devis</option>
                         <option value="2"> Une question?</option>
                         <option value="3">Autre</option>
                         @error('subject')
-                            <div class="alert">{{$errors->first('subject');}}</div>
+                            <div class="alert">hhhhhhhh{{$errors->first('subject');}}</div>
                         @enderror
                     </select>
                 </div>
@@ -63,10 +64,10 @@
                 <div class="mb-3">
                     <div class="mb-3">
                     <label for="category" class="form-label">Catégorie Client</label>
-                    <select name="category" id="category" class="form-select" >
-                        <option selected>Dans quelle catégorie êtes vous?</option>
+                    <select name="category" id="category" class="form-select @error('category') is-invalid @enderror" >
+                        <option value="" selected>Dans quelle catégorie êtes vous?</option>
                         <option value="1">Particulier</option>
-                        <option value="2"> Entreprise</option>
+                        <option value=2> Entreprise</option>
                         @error('category')
                             <div class="alert">{{$errors->first('category');}}</div>
                         @enderror

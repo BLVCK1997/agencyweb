@@ -11,9 +11,17 @@ class contactController extends Controller
     public function create(){
         return view('emails.contact');
     }
-    public function store(contactRequest $request){
-        $data=$request->all();
-        dd($data);
+    public function store(){
+        $data=request()->validate([
+            "subject"=>"bail|required|numeric",
+            "name"=>"bail|required|min:2",
+            "firstname"=>"bail|required|min:2",
+            "email"=>"bail|required",
+            "phone"=>"bail|required",
+            "category"=>"bail|required|numeric",
+            "message"=>"bail|min:43"
+        ]);
+        dd ($data);
     }
 
     public function devis(contactRequest $request){
