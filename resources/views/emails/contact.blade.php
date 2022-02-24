@@ -6,6 +6,9 @@
         <h1 class="mt-5">
             Hello!
         </h1>
+        @if(Session::has('success'))
+        {{Session::get('success')}}
+        @endif
         <h2>
             Envoyer un message
         </h2>
@@ -18,14 +21,14 @@
                 <div class="mb-3">
                     <label for="subject" class="form-label">Sujet du Message</label>
                     <select name="subject" id="subject" class="form-select @error('subject')is-invalid @enderror" >
-                        <option value=""selected>Votre choix</option>
+                        <option value="dddd"selected>Votre choix</option>
                         <option value="1">Demande de devis</option>
                         <option value="2"> Une question?</option>
                         <option value="3">Autre</option>
-                        @error('subject')
-                            <div class="alert">hhhhhhhh{{$errors->first('subject');}}</div>
-                        @enderror
                     </select>
+                    @error('subject')
+                        <div class="alert">{{$errors->first('subject');}}</div>
+                    @enderror
                 </div>
 
                 <div class="row">
@@ -66,7 +69,7 @@
                     <label for="category" class="form-label">Catégorie Client</label>
                     <select name="category" id="category" class="form-select @error('category') is-invalid @enderror" >
                         <option value="" selected>Dans quelle catégorie êtes vous?</option>
-                        <option value="1">Particulier</option>
+                        <option value=1>Particulier</option>
                         <option value=2> Entreprise</option>
                         @error('category')
                             <div class="alert">{{$errors->first('category');}}</div>

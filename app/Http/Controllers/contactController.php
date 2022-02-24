@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\contactRequest;
 use Illuminate\Http\Request;
+use app\Mail\contactMail;
 
 class contactController extends Controller
 {
@@ -13,15 +14,17 @@ class contactController extends Controller
     }
     public function store(){
         $data=request()->validate([
-            "subject"=>"bail|required|numeric",
+            "subject"=>"bail|required",
             "name"=>"bail|required|min:2",
             "firstname"=>"bail|required|min:2",
             "email"=>"bail|required",
             "phone"=>"bail|required",
-            "category"=>"bail|required|numeric",
+            "category"=>"bail|required",
             "message"=>"bail|min:43"
         ]);
-        dd ($data);
+        Mail::to($data['email'])->send(new contactMail($data->except(['email'])));
+        session()->flash('success', 'votre requête est effectuée');
+        return redirect()->back();
     }
 
     public function devis(contactRequest $request){

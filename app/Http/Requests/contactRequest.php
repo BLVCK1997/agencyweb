@@ -30,7 +30,7 @@ class contactRequest extends FormRequest
                 "firstname"=>"bail|required|min:2",
                 "email"=>"bail|required",
                 "phone"=>"bail|required",
-                "entreprise"=>"bail|required",
+                "category"=>"bail|required",
                 "message"=>"bail|min:43"
         ];
     }

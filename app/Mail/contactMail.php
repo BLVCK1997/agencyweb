@@ -26,8 +26,8 @@ class contactMail extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build($data)
     {
-        return $this->view('view.name');
+        return $this->view('contact-mailing',compact('data'));
     }
 }
