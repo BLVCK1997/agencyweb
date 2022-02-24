@@ -28,6 +28,6 @@ class contactMail extends Mailable
      */
     public function build($data)
     {
-        return $this->view('contact-mailing',compact('data'));
+        return $this->view('contact-mailing',["data"=>$data]);
     }
 }

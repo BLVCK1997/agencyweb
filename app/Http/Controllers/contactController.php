@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\contactRequest;
 use Illuminate\Http\Request;
-use app\Mail\contactMail;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\contactMail;
 
 class contactController extends Controller
 {
@@ -22,7 +23,7 @@ class contactController extends Controller
             "category"=>"bail|required",
             "message"=>"bail|min:43"
         ]);
-        Mail::to($data['email'])->send(new contactMail($data->except(['email'])));
+        Mail::to($data['email'])->send(new contactMail($data));
         session()->flash('success', 'votre requête est effectuée');
         return redirect()->back();
     }
