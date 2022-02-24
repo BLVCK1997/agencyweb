@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','appController@index')->name('homepage');
 Route::get('/service','appController@service')->name('service');
 Route::get('/realisation','appController@realisation')->name('realisation');
-Route::get('/contact','appController@contact')->name('contact');
-Route::post('/contact','appController@contact-send')->name('contact');
-Route::get('/devis','appController@devis')->name('devis');
+Route::get('/contact','contactController@create')->name('contact');
+Route::post('/contact','contactController@store')->name('contact');
+Route::get('/devis','contactController@devis')->name('devis');
+Route::post('/devis','contactController@devis')->name('devis');
 
 Route::get('/stratege/positionnement','appController@positionnement')->name('positionnement');
 Route::get('/stratege/platform_marque','appController@platform_marque')->name('platform_marque');
