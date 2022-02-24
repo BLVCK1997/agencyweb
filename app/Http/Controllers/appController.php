@@ -19,11 +19,6 @@ class appController extends Controller
     }
 
 
-    public function devis(){
-        return view('emails/devis');
-    }
-
-
     //stratege
 
     public function positionnement(){

@@ -14,5 +14,13 @@ class contactController extends Controller
     public function store(contactRequest $request){
         $data=$request->all();
         dd($data);
-}
+    }
+
+    public function devis(contactRequest $request){
+        if($request()->isMethod('post')){
+            $data=$request()->all();
+            dd($data);
+        }
+        return view('emails/devis');
+    }
 }
