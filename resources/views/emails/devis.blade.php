@@ -13,11 +13,13 @@
                 </div>
 
                 <div class="container">
-                    <form action="#" method="post">
+                    <form action="{{route('devis')}}" method="post">
+
+                        @csrf
 
                         <div class="mb-3">
                             <label for="subject" class="form-label">Sujet du Message</label>
-                            <input type='text' placeholder="Demande de devis" name="subject" id="subject" class="form-control @error('name')is-invalid @enderror" readonly>
+                            <input type='text' placeholder="Demande de devis" name="subject" id="subject" class="form-control @error('name') is-invalid @enderror" readonly>
                         </div>
 
                         <div class="row">
@@ -79,16 +81,16 @@
                         <div class="mb-3">
                             <h3>Par quels services êtes-vous interressé ?</h3>
                             <label for="branding" class="form-label">Branding</label>
-                            <input type="checkbox" id="branding" name="branding">
+                            <input type="checkbox" id="branding" value="branding" name="branding">
 
                             <label for="creation" class="form-label">Création graphique</label>
-                            <input type="checkbox" id="creation" name="creation">
+                            <input type="checkbox" id="creation" value="creation" name="creation">
 
                             <label for="webdesign" class="form-label">Web design</label>
-                            <input type="checkbox" id="webdesign" name="webdesign">
+                            <input type="checkbox" id="webdesign" value="webdesign" name="webdesign">
 
                             <label for="webdev" class="form-label">Développement Web</label>
-                            <input type="checkbox" id="webdev" name="webdev">
+                            <input type="checkbox" id="webdev" value="webdev" name="webdev">
                         </div>
 
                         <p>

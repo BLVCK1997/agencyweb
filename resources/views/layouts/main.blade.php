@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 </head>
 <body>
-    
+
     <div class="container-fluid slideps">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -38,7 +38,7 @@
                     <a class="nav-link" href="{{route('contact')}}">Nos contacts</a>
                     </li>
                     <!-- <li class=" devis nav-item px-3">
-                    <a class="nav-link" href="/devis.php">Demander un devis</a>
+                    <a class="nav-link" href="{{route('devis')}}">Demander un devis</a>
                     </li> -->
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -115,71 +115,71 @@
                     <h4>VOUS AVEZ UN PROJET ?</h4>
                     <h4>ON EN PARLE</h4>
                     <div class="my-4">
-                        <a href="/devis.php" class="btn btn-primary text-light px-3 py-3"> Demander un Devis</a> 
+                        <a href="/devis.php" class="btn btn-primary text-light px-3 py-3"> Demander un Devis</a>
                     </div>
                 </div>
 
                 <div class="col-sm-6 col-lg-3 ps-5">
                     <h4>AGENCYWEB</h4>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             A propos de nous
                     </a>
-                    <a href="{{route('realisation')}}" class="agencyweb py-2"> 
+                    <a href="{{route('realisation')}}" class="agencyweb py-2">
                             Nos réalisations
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Lorem
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Ipsum
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Sanctus
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-lg-3 ps-5">
                     <h4>NOS SERVICES</h4>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Branding
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Social Media
 
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Développement web
 
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Design Graphique
 
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Studio de création
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-lg-3 ps-5">
                     <h4>CONTACTS</h4>
-                    <a href="{{route('contact')}}" class="agencyweb py-2"> 
+                    <a href="{{route('contact')}}" class="agencyweb py-2">
                             Contactez-nous
                     </a>
-                    <a href="" class="agencyweb py-2"> 
+                    <a href="" class="agencyweb py-2">
                             Abidjan, Yopougon Bel Air
                     </a>
 
                     <!-- <div class="container">
 
                     </div> -->
-                    
-                    <a href="" class="agencyweb py-2"> 
+
+                    <a href="" class="agencyweb py-2">
                         S'inscrire à la newsletter
                     </a>
                 </div>
             </div>
         </div>
-        
+
         <hr>
 
         <div class="my-0 pb-3">

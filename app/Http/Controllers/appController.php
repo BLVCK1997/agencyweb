@@ -10,11 +10,11 @@ class appController extends Controller
         return view('index');
     }
 
-    public function service(){
+    public function services(){
         return view('services');
     }
 
-    public function realisation(){
+    public function realisations(){
         return view('realisations');
     }
 

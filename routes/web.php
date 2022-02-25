@@ -12,12 +12,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/','appController@index')->name('homepage');
-Route::get('/service','appController@service')->name('service');
-Route::get('/realisation','appController@realisation')->name('realisation');
+Route::get('/services','appController@services')->name('service');
+Route::get('/realisations','appController@realisations')->name('realisation');
 Route::get('/contact','contactController@create')->name('contact');
 Route::post('/contact-send','contactController@store')->name('contact-send');
 Route::get('/devis','contactController@devis')->name('devis');
+
 Route::post('/devis','contactController@devis')->name('devis');
+
 
 Route::get('/stratege/positionnement','appController@positionnement')->name('positionnement');
 Route::get('/stratege/platform_marque','appController@platform_marque')->name('platform_marque');
